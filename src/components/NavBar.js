@@ -15,6 +15,9 @@ export default function NavBar() {
         <li>
           <Link to="/movies">movies</Link>
         </li>
+        <li>
+          <Link to="/magazine">magazine</Link>
+        </li>
       </ul>
     </div>
   )

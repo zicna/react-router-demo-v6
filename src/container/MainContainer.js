@@ -2,12 +2,13 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import NavBar from '../components/NavBar'
-import BooksList from '../pages/BooksList'
+import BooksList from '../pages/book/BooksList'
 import Home from '../pages/Home'
-import Book from '../pages/Book'
-import BooksLayout from '../pages/BooksLayout'
-import MoviesRoutes from '../pages/MoviesRoutes'
+import Book from '../pages/book/Book'
+import BooksLayout from '../pages/book/BooksLayout'
+import MoviesRoutes from '../pages/moviePages/MoviesRoutes'
 import PageNotFound from '../pages/PageNotFound'
+import MagazineRoutes from '../pages/magazine/MagazineRoutes'
 
 export default function MainContainer() {
   return (
@@ -22,7 +23,8 @@ export default function MainContainer() {
           <Route path=":id" element={<Book />} />
         </Route>
         <Route path="/movies/*" element={<MoviesRoutes />} />
-        < Route path="*" element={<PageNotFound/>}/>
+        <Route path="/magazine/*" element={<MagazineRoutes />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   )
