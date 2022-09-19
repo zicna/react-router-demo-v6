@@ -28,7 +28,7 @@ export default function BooksLayout() {
           {renderBookLinks}
         </ul>
       </nav>
-      <Outlet />
+      <Outlet contex={{ 1: 'Hello', 2: 'World' }} />
     </div>
   )
 }

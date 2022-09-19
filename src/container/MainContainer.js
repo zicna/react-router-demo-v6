@@ -4,12 +4,10 @@ import { Route, Routes } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 import BooksList from '../pages/BooksList'
 import Home from '../pages/Home'
-import MoviesList from '../pages/MoviesList'
 import Book from '../pages/Book'
 import BooksLayout from '../pages/BooksLayout'
-// import MoviesLayout from '../pages/MoviesLayout'
-// import Movie from '../pages/Movie'
 import MoviesRoutes from '../pages/MoviesRoutes'
+import PageNotFound from '../pages/PageNotFound'
 
 export default function MainContainer() {
   return (
@@ -23,6 +21,7 @@ export default function MainContainer() {
           <Route path=":id" element={<Book />} />
         </Route>
         <Route path="/movies/*" element={<MoviesRoutes />} />
+        < Route path="*" element={<PageNotFound/>}/>
       </Routes>
     </div>
   )
