@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import "./styles.css"
 
 export default function NavBar() {
   return (
     <div>
       <ul>
         <li>
-          <Link to="/">home</Link>
+          <NavLink end to="/" >home</NavLink>
         </li>
         <li>
           <Link to="/books">books</Link>

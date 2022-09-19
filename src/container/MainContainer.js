@@ -15,6 +15,7 @@ export default function MainContainer() {
       MainContaine
       <NavBar />
       <Routes>
+        {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<BooksLayout />}>
           <Route index element={<BooksList />} />
