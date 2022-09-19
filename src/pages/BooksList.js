@@ -1,7 +1,7 @@
-import React from 'react'
-
 export default function BooksList() {
   return (
-    <div>BooksList</div>
+    <div>
+      <h1>BooksList</h1>
+    </div>
   )
 }
